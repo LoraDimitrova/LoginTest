@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class SuccessPage {
+
+    protected WebDriver driver;
+
+    public SuccessPage(WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public boolean isSuccessMessageDisplayed() {
+        WebElement successMessage = driver.findElement(By.xpath("//*[text()='THANK YOU FOR YOUR ORDER']"));
+        return successMessage.isDisplayed();
+    }
+}

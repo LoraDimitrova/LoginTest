@@ -19,10 +19,11 @@ public class MyFirstTest {
         driver = new ChromeDriver();
     }
 
- //   @AfterTest
-   // public void tearDown(){
-     //   driver.quit();
-    //}
+   @AfterTest
+    public void tearDown(){
+        driver.quit();
+   }
+
 
     @Test
     public void successfulLoginTest(){

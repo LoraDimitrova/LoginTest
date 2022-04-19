@@ -42,7 +42,7 @@ public class TestUtil {
             System.out.println("Cannot read configs");
         }
 
-        switch (browser) {
+        switch (browser){
             case "chrome":
                 createChromeDriver(url, implicitWait);
                 break;
@@ -50,7 +50,7 @@ public class TestUtil {
                 createFirefoxDriver(url, implicitWait);
                 break;
             default:
-                throw new IllegalStateException("Unsupported browser type");
+                throw new IllegalStateException("Unsupported browser type.");
         }
     }
 

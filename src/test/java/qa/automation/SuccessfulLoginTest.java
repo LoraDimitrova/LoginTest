@@ -29,6 +29,6 @@ public class SuccessfulLoginTest extends TestUtil {
 
         LoginPage loginPage = new LoginPage(driver);
         ProductsPage productsPage = loginPage.login(userName,password);
-       Assert.assertTrue(productsPage.isHamburgerMenuDisplayed(), "This shall be visible after successful login.");
+       Assert.assertTrue(productsPage.isDropDownMenuDisplayed(), "This shall be visible after successful login.");
     }
 }

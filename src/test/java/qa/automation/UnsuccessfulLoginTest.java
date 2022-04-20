@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utils.CsvHelper;
 import java.io.IOException;
 
-public class UnsuccessfulLogin extends TestUtil {
+public class UnsuccessfulLoginTest extends TestUtil {
     @DataProvider(name = "unsuccessfulLogins")
     public static Object [][] readUsersFromCsvFile() throws IOException, CsvException {
         return CsvHelper.readCsvFile("src/test/resources/wrongUsers.csv");

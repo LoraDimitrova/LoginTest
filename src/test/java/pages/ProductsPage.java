@@ -60,7 +60,7 @@ public class ProductsPage {
         return Integer.parseInt(shoppingCartCounter.getText());
     }
 
-    public boolean isHamburgerMenuDisplayed() {
+    public boolean isDropDownMenuDisplayed() {
         WebElement userAllPagesButton = driver.findElement(By.id("react-burger-menu-btn"));
         return userAllPagesButton.isDisplayed();
     }

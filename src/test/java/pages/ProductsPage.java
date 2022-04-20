@@ -71,28 +71,6 @@ public class ProductsPage {
         return new CartPage(driver);
     }
 
-    public boolean areProductsSortedByPriceAsc() {
-        List<WebElement> priceHolders = driver.findElements(By.className("inventory_item_price"));
-
-        Double price = 0.0;
-        boolean areSorted = true;
-        for (int i = 0; i < priceHolders.size(); i++) {
-            String productPriceStr = priceHolders.get(i).getText().replace("$","");
-
-            // convert into Double
-            double productPrice = Double.parseDouble(productPriceStr);
-
-            if (productPrice < price) {
-                areSorted = false;
-                break;
-            }
-
-            price = productPrice;
-        }
-
-        return areSorted;
-    }
-
     public void sortByPriceAsc() {
         FluentWait fluentWait = new FluentWait(driver)
                 .withTimeout(Duration.ofSeconds(10))

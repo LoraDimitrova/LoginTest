@@ -37,6 +37,6 @@ public class ProductTests extends TestUtil {
         }
 
 
-        Assert.assertEquals(productsPage.getItemsInTheCart(),5,"Because we have only one item so far");
+        Assert.assertEquals(productsPage.getItemsInTheCart(),5,"Because we have only five items so far");
     }
 }

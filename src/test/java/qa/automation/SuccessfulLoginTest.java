@@ -2,8 +2,6 @@ package qa.automation;
 
 import base.TestUtil;
 import com.opencsv.exceptions.CsvException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
